@@ -28,7 +28,7 @@ def generate_qr_code():
     def generate_qrcode(url, dark_colour):
         qrcode = segno.make_qr(url)
         qrcode.to_pil(scale=10,
-                      dark=dark_colour).save("images/qrcode_streamlit.png")
+                      dark=dark_colour).save("qrcode_streamlit.png")
 
 
     # when the user clicks on the button and have entered a url
@@ -39,7 +39,7 @@ def generate_qr_code():
         # generate a qr code
         generate_qrcode(url, dark_colour)
         # place the qr code
-        st.image("images/qrcode_streamlit.png",
+        st.image("qrcode_streamlit.png",
                  caption="My Generate QR Code")
 
     # warning for when user clicks on button without a url
