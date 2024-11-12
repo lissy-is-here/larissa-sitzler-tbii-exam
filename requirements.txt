@@ -1,4 +1,3 @@
 segno
 opencv-python-headless
 qrcode-artistic
-cv2
